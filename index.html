@@ -57,12 +57,32 @@ div.container4 p {
     transform: translate(-50%, -50%) 
 }
 </style>
+<script>
 
+        window.onload = function(){
+
+        var x = document.getElementById("li1");
+        x.style.color = "black";
+
+        function changeColor(){
+            if (x.style.color == "black"){
+                x.style.color = "white";
+            }
+            else if (x.style.color == "white"){
+                x.style.color = "black";
+            }
+        };
+        window.setInterval(changeColor,1);
+        };
+    </script>
 </head>
 <body>  
 
 <div class="wrapper" class=container4>
-<h1>DNVIC IS GAY</h1>
+<ol>
+<li id="li1"><h1>DNVIC IS GAY</h1></li>
+</ol>
+
 </div>  
 	
 <audio autoplay loop>
